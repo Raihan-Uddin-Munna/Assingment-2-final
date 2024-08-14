@@ -6,19 +6,771 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingment-2-final</title>
 
+     
+        
+    <style>
+        header {
+            background-image: radial-gradient(rgb(59, 57, 57), rgb(5, 5, 5));
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Nav-ber Section */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .manu-ber div {
+
+            visibility: hidden;
+        }
 
 
-    
+
+
+        .nav-btn a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .nav-btn {
+            border: 2px solid;
+            border-radius: 24px;
+            padding: 5px 5px 5px 0px;
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 50px;
+        }
+
+        .nav-text {
+            color: rgb(230, 83, 60);
+            font-size: x-large
+        }
+
+        #home-btn {
+            border: 1px solid blue;
+            border-radius: 15px;
+            padding: 5px 10px 5px 10px;
+            background: rgb(230, 83, 60);
+            font-size: large;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .nav-btn-2 {
+            display: flex;
+            align-items: center;
+            font-size: large;
+        }
+
+        /* Get body Section */
+        .bannar-containeer {
+            /* margin-left: 10px; */
+            padding-left: 100px;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: start;
+            position: relative;
+        }
+
+        .bannar-containeer-image {
+            height: 350px;
+
+        }
+
+        .bannar-containeer-tagline {
+            font-size: xx-large;
+        }
+
+        .shape-text {
+            font-family: "Grey Qo";
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .bannar-containeer-tagline {
+
+            font-size: 60px;
+            padding-bottom: 5px;
+        }
+
+        .bannar-containeer-text {
+            padding-left: 30px;
+        }
+
+        .bannar-containeer-paragrap {
+            color: rgb(127, 124, 124);
+            word-wrap: break-all;
+
+
+
+        }
+
+        .box-1 {
+            border: 1px solid;
+            width: fit-content;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgba(219, 223, 223, 0.273);
+            position: absolute;
+            top: 120px;
+            right: 300px;
+
+        }
+
+        .box-1-text {
+            font-size: small;
+        }
+
+        .box-2 {
+            border: 1px solid;
+            width: fit-content;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgba(219, 223, 223, 0.273);
+            position: absolute;
+            left: 600px;
+
+        }
+
+        .bannar-containeer-button {
+            display: grid;
+            grid-template-columns: repeat(2, 80%);
+            align-items: center;
+        }
+
+        #bannar-containeer-button-1 {
+            border-radius: 20px;
+            color: white;
+            margin-top: 10px;
+            padding: 10px 15px 10px 15px;
+            background: rgb(230, 83, 60);
+        }
+
+        #bannar-containeer-button-2 {
+            border-radius: 20px;
+            color: white;
+            margin-top: 10px;
+            padding: 10px 15px 10px 15px;
+            background-color: black;
+
+        }
+
+
+        /* Habits section */
+        .Habits-section-containeer {
+            background-color: black;
+        }
+
+        .Habits-section-tagline h2 {
+            color: white;
+            font-size: xx-large;
+        }
+
+        .Habits-section-tagline p {
+            color: rgb(127, 124, 124);
+        }
+
+        .Habits-section-tagline {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 2px;
+
+        }
+
+        .card-img-1 {
+            /* box-sizing: border-box; */
+            border-radius: 100px;
+            text-align: center;
+        }
+
+        .card-1 {
+            /* border: 2px solid red; */
+            width: fit-content;
+            padding: 20px;
+        }
+
+        .card-text-1 {
+            text-align: center;
+            color: white;
+        }
+
+        .card-paragrap-1a {
+            padding-left: 18px;
+        }
+
+        .card-paragrap-1 {
+            color: rgb(127, 124, 124);
+        }
+
+        .Card-containeer {
+            display: grid;
+            grid-template-columns: repeat(4, 2fr);
+            margin-left: 60px;
+            margin-right: 60px;
+
+        }
+
+
+        /* Run an extra mile section */
+        .Run-section {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            align-items: center;
+            border: 2px solid;
+            border-radius: 10px;
+            margin: 0px 100px 2px 50px;
+            padding: 20px 0px 20px 30px;
+            background-color: rgba(230, 224, 224, 0.138);
+        }
+
+        .run-img {
+            width: 400px;
+            border-radius: 20px;
+        }
+
+        .Run-section-tagline {
+            color: white;
+            font-size: xx-large;
+        }
+
+        .Run-section-container {
+            background-color: black;
+        }
+
+        .Run-section-button {
+            width: 200px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 18px;
+            background-color: rgb(230, 83, 60);
+            font-size: medium;
+            color: white;
+        }
+
+        .Run-section-paragraph {
+            color: rgb(127, 124, 124);
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        /* Foteer section */
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(3, 60% 20% 20%);
+            margin-left: 40px;
+            margin-right: 60px;
+            padding: 40px 0px 80px 40px;
+
+
+        }
+
+        .footer-section {
+
+            background-color: rgba(20, 19, 19, 0.951);
+        }
+
+        .list-items li {
+            list-style-type: none;
+            padding-top: 10px;
+            color: rgb(127, 124, 124);
+
+        }
+
+        .list-items li:hover {
+            color: rgba(170, 10, 191, 0.82);
+            font-size: larger;
+        }
+
+
+        .footer-container div h1 {
+            color: rgb(230, 83, 60);
+            font-size: xx-large;
+            padding-bottom: 10px;
+        }
+
+        .footer-container div p {
+            color: rgb(127, 124, 124);
+        }
+
+        .footer-container-keyword {
+            color: white;
+        }
+
+        .footer-final-text {
+            text-align: center;
+            color: rgb(127, 124, 124);
+            padding-bottom: 10px;
+        }
+
+        /* Extra-Section */
+        /* Exerise-Section */
+        .Excrise-section {
+            background-color: black;
+        }
+
+        .Excrise-section h1 {
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+            margin-bottom: 10px;
+        }
+
+        .Excrise-section h2 {
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .Excrise-image {
+            height: 120px;
+            width: 120px;
+            border-radius: 10px;
+        }
+
+        .Excrise-section-container {
+            display: grid;
+            grid-template-columns: repeat(4, 10% 30% 10% 30%);
+            gap: 20px;
+            padding: 20px 0px 20px 50px;
+            /* border: 1px solid; */
+            border-radius: 10px;
+            background-color: rgba(127, 124, 124, 0.215);
+            border-bottom: none;
+            margin: 00px 50px 00px 50px;
+
+        }
+
+        .Excrise-section-container h2 {
+            color: white;
+
+        }
+
+        .Excrise-section-container h2:hover {
+            color: rgba(170, 10, 191, 0.82);
+        }
+
+        .Excrise-section-container p {
+            color: rgb(127, 124, 124);
+        }
+
+
+
+
+
+        /* BMI-Calculate-Section */
+        .BMI-Container {
+            display: grid;
+            grid-template-columns: repeat(2, 40% 60%);
+            background-color: rgba(127, 124, 124, 0.269);
+            padding: 15px 5px 15px 5px;
+        }
+
+        .BMI-input {
+
+            color: white;
+        }
+
+
+        .input-area {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 50vw;
+            height: 3vw;
+            padding: 5px;
+            gap: 5px;
+
+
+
+        }
+
+        .input-fild {
+
+            color: black;
+
+            padding-left: 5px;
+            font-size: large;
+        }
+
+        .BMI-input h1 {
+            text-align: start;
+        }
+
+        .input-button {
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(230, 83, 60);
+            font-size: larger;
+            margin-top: 10px;
+        }
+
+        .table {
+            color: white;
+            margin-left: 20px;
+
+            table {
+                width: 80%;
+            }
+
+            th {
+                height: 40px;
+            }
+
+            td {
+                height: 30px;
+            }
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+
+
+
+
+
+        /* meet section */
+        .meet-section-main {
+            background-color: black;
+            padding-bottom: 100px;
+
+        }
+
+        .meet-section-headline {
+            text-align: center;
+
+        }
+
+        .Meet-section-card-1 {
+            /* border: 2px solid red; */
+            border-radius: 15px;
+            width: min-content;
+            padding: 20px;
+            position: relative;
+        }
+
+        .Meet-section-card-1 img {
+            height: 200px;
+            width: 20vw;
+            border-radius: 15px;
+        }
+
+        .meet-section-headline h1 {
+            color: white;
+        }
+
+        .meet-section-headline p {
+            color: rgb(127, 124, 124);
+
+        }
+
+        .meet-section-text {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+
+        .meet-section-text h4 {
+            color: white;
+            font-size: medium;
+
+        }
+
+        .meet-section-text h4:hover {
+            font-size: x-large;
+        }
+
+        .meet-section-text p {
+            color: rgba(31, 30, 30, 0.965);
+        }
+
+        .meet-section-text p:hover {
+            font-size: x-large;
+            color: fuchsia;
+        }
+
+
+
+        .Meet-section-container {
+            border: 2px solid;
+            width: fit-content;
+            padding: 5px 15px;
+            margin: 10px 10px 0px 150px;
+            display: grid;
+            gap: 2px;
+            grid-template-columns: repeat(3, 32%);
+            border-radius: 15px;
+            background-color: rgba(230, 224, 224, 0.138);
+
+
+        }
+
+
+
+        /* Responsive */
+        /* Small device */
+        @media screen and (max-width : 576px) {
+
+
+
+            .manu-ber div {
+
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px;
+            }
+
+            .nav-btn {
+                visibility: hidden;
+            }
+
+            .bannar-containeer-tagline {
+
+                font-size: 30px;
+                padding-bottom: 5px;
+            }
+
+            .bannar-containeer {
+                grid-template-columns: repeat(1, 1fr);
+                padding-left: 0px;
+            }
+
+            .box-2 {
+                left: 10px;
+                bottom: 90px;
+
+            }
+
+            .box-1 {
+
+                top: 300px;
+                right: 60px;
+
+            }
+
+            .bannar-containeer-paragrap {
+                word-wrap: break-word;
+            }
+
+
+            /* habit_section */
+            .Card-containeer {
+                display: grid;
+                grid-template-columns: repeat(1, 2fr);
+                margin-left: 30px;
+                margin-right: 15px;
+
+            }
+
+
+
+
+            /* Run with extra mile-section */
+            .Run-section {
+
+                grid-template-columns: repeat(1, 100%);
+                width: fit-content;
+                margin-left: 10px;
+                padding: 20px 10px 20px 10px;
+
+
+            }
+
+            .run-img {
+                width: 200px;
+                border-radius: 20px;
+                margin-top: 20px;
+            }
+
+
+
+            /* Extra-Section */
+            /* Exerise-Section */
+            .Excrise-section h2 {
+
+                margin-left: 2px;
+
+            }
+
+            .Excrise-section-container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin: 00px 50px 00px 5px;
+                padding: 10px 0px 10px 5px;
+            }
+
+            .Excrise-image {
+                height: 120px;
+                width: 250px;
+                border-radius: 10px;
+            }
+
+
+            /* BMI-section */
+
+            .BMI-Container {
+
+                grid-template-columns: repeat(1, 100%);
+                height: fit-content;
+                padding: 15px 5px 15px 5px;
+            }
+
+
+
+
+
+
+
+            .input-area {
+                display: grid;
+
+                grid-template-columns: repeat(2, 50%);
+                width: 280px;
+                height: 10vw;
+                padding: 5px;
+                gap: 5px;
+
+
+
+            }
+
+            .input-fild {
+
+                color: black;
+
+                padding-left: 5px;
+                font-size: large;
+            }
+
+            .BMI-input h1 {
+                font-size: 20px;
+                text-align: center;
+                padding-top: 10px;
+
+            }
+
+            .BMI-input p {
+                font-size: 20px;
+                padding: 2px 5px 2px 5px;
+
+
+
+            }
+
+            .BMI-Container h1 {
+
+                font-size: 20px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* Meet Section */
+            .Meet-section-container {
+
+                padding: 5px 0px;
+                width: 280px;
+                margin: 10px 0px 0px 0px;
+                grid-template-columns: repeat(1, 100%);
+
+            }
+
+            .Meet-section-card-1 img {
+                height: 200px;
+                width: 70vw;
+                border-radius: 15px;
+            }
+
+            .meet-section-headline h1 {
+                text-align: start;
+                margin-left: 10px;
+                font-size: 30px;
+
+            }
+
+            .meet-section-headline p {
+                text-align: start;
+                margin-left: 10px;
+                padding: 2px 5px 2px 5px;
+                /* font-size: 15px; */
+
+            }
+
+
+            /* Footer-Section */
+            .footer-section {
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+
+            .footer-container {
+
+                grid-template-columns: repeat(1, 100%);
+                margin-left: 10px;
+                margin-right: 60px;
+                padding: 0px 10px 0px 0px;
+
+
+            }
+
+            .footer-final-text {
+                text-align: start;
+
+                padding-left: 10px;
+            }
+
+            .footer-container-keyword {
+                font-size: x-large;
+                padding-top: 10px;
+            }
+
+
+
+
+
+        }
+    </style>
 </head>
 
-<body>
 
+<body>
     <header>
-        <!-- Nav-ber Section -->
+        <!-- Nav-ber Section  -->
         <nav>
             <h3 class="nav-text">Fitness</h3>
 
-            <!-- menu-ber section -->
             <div class="manu-ber">
                 <div></div>
                 <div></div>
@@ -66,7 +818,401 @@
         </section>
 
 
-    </header>
+    </header> 
+
+
+
+    <main>
+
+        <section class="Habits-section-containeer">
+            <div class="Habits-section-tagline">
+                <h2>Change Your Habits</h2>
+                <p>We believe fitness should be accesible to everyone , regardless of income or <br> accessnto a gym.
+                </p>
+            </div>
+
+
+
+            <div class="Card-containeer">
+                <div class="card-1">
+                    <img class="card-img-1" src="Assets/Images/image 3.png" alt="">
+                    <h3 class="card-text-1">Movement</h3>
+                    <p class="card-paragrap-1">We believe fitness should be <br><span class="card-paragrap-1a">
+                            accesible to everyone</span></p>
+                </div>
+                <div class="card-1">
+                    <img class="card-img-1" src="Assets/Images/image 2.png" alt="">
+                    <h3 class="card-text-1">Time</h3>
+                    <p class="card-paragrap-1">We believe fitness should be <br><span class="card-paragrap-1a">
+                            accesible to everyone</span></p>
+                </div>
+                <div class="card-1">
+                    <img class="card-img-1" src="Assets/Images/image 4.png" alt="">
+                    <h3 class="card-text-1">Practice</h3>
+                    <p class="card-paragrap-1">We believe fitness should be <br><span class="card-paragrap-1a">
+                            accesible to everyone</span></p>
+                </div>
+                <div class="card-1">
+                    <img class="card-img-1" src="Assets/Images/image 5.png" alt="">
+                    <h3 class="card-text-1">Weight Loss</h3>
+                    <p class="card-paragrap-1">We believe fitness should be <br><span class="card-paragrap-1a">
+                            accesible to everyone</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Run an the Extra mile section -->
+        <section class="Run-section-container">
+            <div class="Run-section">
+
+                <div>
+                    <h1 class="Run-section-tagline">Run an Extra <br>Mile Easily</h1>
+                    <p class="Run-section-paragraph">We believe fitness should be accesible to everyone,<br> regardless
+                        of income or accessnto a
+                        gym.We believe <br>fitness should be accesible to everyone.</p>
+                    <button class="Run-section-button">Join Now</button>
+                </div>
+                <div>
+                    <img class="run-img" src="Assets/Images/run.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- /* Extra-Section */
+            /* Exerise-Section */ -->
+
+        <section class="Excrise-section">
+            <h1>Our Feature</h1>
+            <!-- 1 -->
+            <h2>Excrise</h2>
+
+
+            <div class="Excrise-section-container">
+                <img class="Excrise-image" src="Assets/Images/step-2.jpg" alt="">
+                <div>
+                    <h2>How Many Steps Do People Per Day on Average</h2>
+                    <p>How many steps do people actually take per day ?
+                        
+                    </p>
+                </div>
+                <img class="Excrise-image" src="Assets/Images/exercise1.jpg" alt="">
+                <div>
+                    <h2>The Benefits of Burpess and How to Do Them</h2>
+                    <p>How many steps do people actually take per day ?
+                    
+                    </p>
+                </div>
+
+            </div>
+            <div class="Excrise-section-container">
+                <img class="Excrise-image" src="Assets/Images/exercise2.png" alt="">
+                <div>
+                    <h2>12 Exercises That Burn the Most Calories</h2>
+                    <p>How many steps do people actually take per day ?
+                        
+                    </p>
+                </div>
+                <img class="Excrise-image" src="Assets/Images/exercise3.png" alt="">
+                <div>
+                    <h2>What muscle Group Are Best to Work Out togrther?</h2>
+                    <p>How many steps do people actually take per day ?
+                 
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!--  2 -->
+
+            <section class="Excrise-section">
+                <h2>Yoga</h2>
+
+                <div class="Excrise-section-container">
+                    <img class="Excrise-image" src="Assets/Images/Yoga1.jpeg" alt="">
+                    <div>
+                        <h2>How Many Steps Do People Per Day on Average</h2>
+                        <p>How many steps do people actually take per day ?
+                            
+                        </p>
+                    </div>
+                    <img class="Excrise-image" src="Assets/Images/Yoga2.jpg" alt="">
+                    <div>
+                        <h2>The Benefits of Burpess and How to Do Them</h2>
+                        <p>How many steps do people actually take per day ?
+                            
+                        </p>
+                    </div>
+
+                </div>
+                <div class="Excrise-section-container">
+                    <img class="Excrise-image" src="Assets/Images/Yoga3.jpeg" alt="">
+                    <div>
+                        <h2>12 Exercises That Burn the Most Calories</h2>
+                        <p>How many steps do people actually take per day ?
+                            
+                        </p>
+                    </div>
+                    <img class="Excrise-image" src="Assets/Images/Holistic Fitness2.jpeg" alt="">
+                    <div>
+                        <h2>What muscle Group Are Best to Work Out togrther?</h2>
+                        <p>How many steps do people actually take per day ?
+                            
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+            <!-- 3 -->
+            <section class="Excrise-section">
+                <h2>Strength Training</h2>
+
+                <div class="Excrise-section-container">
+                    <img class="Excrise-image" src="Assets/Images/Strength Training1.jpeg" alt="">
+                    <div>
+                        <h2>How Many Steps Do People Per Day on Average</h2>
+                        <p>How many steps do people actually take per day ?
+                            See how the numbers break down by age ,sex etc.
+                        </p>
+                    </div>
+                    <img class="Excrise-image" src="Assets/Images/Strength Training2.jpeg" alt="">
+                    <div>
+                        <h2>The Benefits of Burpess and How to Do Them</h2>
+                        <p>How many steps do people actually take per day ?
+                            
+                        </p>
+                    </div>
+
+                </div>
+                <div class="Excrise-section-container">
+                    <img class="Excrise-image" src="Assets/Images/Strength Training3.jpeg" alt="">
+                    <div>
+                        <h2>12 Exercises That Burn the Most Calories</h2>
+                        <p>How many steps do people actually take per day ?
+ 
+                        </p>
+                    </div>
+                    <img class="Excrise-image" src="Assets/Images/step2.jpeg" alt="">
+                    <div>
+                        <h2>What muscle Group Are Best to Work Out togrther?</h2>
+                        <p>How many steps do people actually take per day ?
+                           
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- 4 -->
+
+            </section>
+            <section class="Excrise-section">
+                <h2>Holistic Fitness</h2>
+
+                <div class="Excrise-section-container">
+                    <img class="Excrise-image" src="Assets/Images/Holistic Fitness1.jpeg" alt="">
+                    <div>
+                        <h2>How Many Steps Do People Per Day on Average</h2>
+                        <p>How many steps do people actually take per day ?
+                            
+                        </p>
+                    </div>
+                    <img class="Excrise-image" src="Assets/Images/Holistic Fitness2.jpeg" alt="">
+                    <div>
+                        <h2>The Benefits of Burpess and How to Do Them</h2>
+                        <p>How many steps do people actually take per day ?
+                             
+                        </p>
+                    </div>
+
+                </div>
+                <div class="Excrise-section-container">
+                    <img class="Excrise-image" src="Assets/Images/girljpg.jpg" alt="">
+                    <div>
+                        <h2>12 Exercises That Burn the Most Calories</h2>
+                        <p>How many steps do people actually take per day ?
+                             
+                        </p>
+                    </div>
+                    <img class="Excrise-image" src="Assets/Images/Holistic Fitness4jpg.jpg" alt="">
+                    <div>
+                        <h2>What muscle Group Are Best to Work Out togrther?</h2>
+                        <p>How many steps do people actually take per day ?
+                             
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+
+
+
+            <!-- BMI Calculate section -->
+            <section class="BMI-Container">
+                <div>
+                    <h1>BMI Calculator chart</h1>
+
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+
+                            </tr>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+
+                            </tr>
+                            <tr>
+                                <td>18.5-24.9</td>
+                                <td>Healthy</td>
+
+                            </tr>
+                            <tr>
+                                <td>25.0-29.9</td>
+                                <td>Overweight</td>
+
+                            </tr>
+                            <tr>
+                                <td>30.0-and Above</td>
+                                <td>Obese</td>
+
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="BMI-input">
+                    <h1>Calculate Your BMI</h1>
+                    <p>We believe fitness should be accesible to everyone,<br> regardless
+                        of income or accessnto a
+                        gym.</p>
+                    <div class="BMI-input">
+                        <div class="input-area">
+                            <input class="input-fild" type="number" name="" placeholder="Height/cm" id="">
+                            <input class="input-fild" type="number" name="" placeholder="Weight/kg" id="">
+                        </div>
+                        <div class="input-area">
+                            <input class="input-fild" type="number" name="" placeholder="Age" id="">
+                            <input class="input-fild" type="text" name="" placeholder="Sex" id="">
+                        </div>
+                        <input class="input-fild input-area" type="text" name="" placeholder="Select an active factor"
+                            id="">
+                        <input class="input-button" type="button" value="Calculate">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meet our team section -->
+            <section class="meet-section-main">
+
+
+                <div class="meet-section-headline">
+                    <h1>Meet our team</h1>
+                    <p>We believe fitness should be accesible to everyone,<br> regardless
+                        of income or accessnto a
+                        gym.</p>
+                </div>
+
+
+                <div class="Meet-section-container">
+
+                    <!-- Card-1 -->
+                    <div>
+                        <div class="Meet-section-card-1">
+                            <img src="Assets/Images/trainer1.png" alt="">
+                            <div class="meet-section-text">
+                                <h4>Jerome Bel</h4>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card-2 -->
+                    <div>
+                        <div class="Meet-section-card-1">
+                            <img src="Assets/Images/trainer2.png" alt="">
+                            <div class="meet-section-text">
+                                <h4>Cameron Williamson</h4>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Card-3 -->
+                    <div>
+                        <div class="Meet-section-card-1">
+                            <img src="Assets/Images/trainer3.png" alt="">
+                            <div class="meet-section-text">
+                                <h4>Darrell Steward</h4>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Card-4 -->
+                    <div>
+                        <div class="Meet-section-card-1">
+                            <img src="Assets/Images/trainer4.png" alt="">
+                            <div class="meet-section-text">
+                                <h4>Dianne Russell</h4>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Card-5 -->
+                    <div>
+                        <div class="Meet-section-card-1">
+                            <img src="Assets/Images/trainer5.png" alt="">
+                            <div class="meet-section-text">
+                                <h4>Cody Fisher</h4>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Card-6 -->
+                    <div>
+                        <div class="Meet-section-card-1">
+                            <img src="Assets/Images/trainer6.png" alt="">
+                            <div class="meet-section-text">
+                                <h4>Theresa Webb</h4>
+                                <p>Trainer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </section>
+
+
+
+
+    </main>
+
+
 
 </body>
 
